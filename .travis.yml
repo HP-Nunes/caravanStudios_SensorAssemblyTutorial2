@@ -8,8 +8,8 @@ python:
 # from Travis
 install:
     - pip install jupyter
-    - wget https://github.com/hakimel/reveal.js/archives/3.8.0.zip
-    - unzip reveal.js-3.8.0.zip
+    - wget https://github.com/hakimel/reveal.js/archive/master.zip
+    - unzip master.zip
     - mv reveal.js-master reveal.js
 
 script:
