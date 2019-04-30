@@ -8,12 +8,12 @@ python:
 # from Travis
 install:
     - pip install jupyter
-    - wget https://github.com/hakimel/reveal.js/archive/3.7.0.zip
-    - unzip reveal.js-3.7.0.zip
+    - wget https://github.com/hakimel/reveal.js/archive/master.zip
+    - unzip master.zip
     - mv reveal.js-master reveal.js
 
 script:
-    - jupyter nbconvert nb.ipynb --to slides --reveal-prefix=reveal.js
+    - jupyter nbconvert nb.ipynb --to slides
 
 after_success: |
     if [ -n "$GITHUB_API_KEY" ]; then
