@@ -12067,7 +12067,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="img/Alert.png" alt="Drawing" align='left' style="width: 50px;"/> 
+<p><span style="color:red; font-size:2em;" font-size = 30px>⚠️</span> 
 <strong>You don't need to have the exact same parameters</strong>; but if you do run into a pickle, it's best practice to include a description of your Operating System parameters along with a description of your issue. You can search for issues and/or ask for help on the following sites:
 <br></p>
 <blockquote><ul>
@@ -12219,7 +12219,8 @@ The Arduino Integrated Development Environment is a software to write programs a
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center><img src="img/Alert.png" alt="Drawing" style="width: 100px;"/></center><h3 id="-IF-THE-FOLLOWING-ERROR-ARISES:"><center> IF THE FOLLOWING ERROR ARISES:</center><a class="anchor-link" href="#-IF-THE-FOLLOWING-ERROR-ARISES:">&#182;</a></h3><p><br></p>
+<h3><center> <span style="color:red; font-size:2em;" font-size = 30px>⚠️</span> IF THE FOLLOWING ERROR ARISES:</center></h3>
+<p><br></p>
 <center>[Errno 13] could not open port /dev/ttyUSB0: [Errno 13] Permission denied: '/dev/ttyUSB0'</center> 
 <br>
 <center>
@@ -12414,36 +12415,10 @@ Change permission privileges with:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Connect-to-the-WiFi"><center>Connect to the WiFi</center><a class="anchor-link" href="#Connect-to-the-WiFi">&#182;</a></h3><ol>
-<li>Connect to the sensor's Wi-Fi ("Feinstaubsensor-Device ID");</li>
-<li>Then, go to the following IP address: <a href="http://192.168.4.1/">http://192.168.4.1/</a> (If you're prompted by a menu, select 'Configure');</li>
-<li>Type the name and password of the Wi-Fi network that the Arduino will be connecting over to collect and send data;</li>
-<li>On the Configuration Page, verify that all of your components are recognized (1 means that the component is recognized, whereas a 0 doesn't):<ul>
-<li>DHT (humidity-temperature sensor)</li>
-<li>SDS (dust sensor)</li>
-<li>auto-update Firmware (Luftdaten's data collection software)</li>
-</ul>
-</li>
-</ol>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><br></p>
-<center><b>Clip below</b></center>
-<center><img src="img/arrow.png" alt="Drawing" width= 80px /></center>
-</div>
-</div>
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<center><img src="img/GIF1.gif" max-width= auto max-height= auto></center>
+<h3 id="1.-Connect-to-the-sensor's-Access-Point"><center>1. Connect to the sensor's Access Point</center><a class="anchor-link" href="#1.-Connect-to-the-sensor's-Access-Point">&#182;</a></h3><p>
+<center>Select "Feinstaubsensor-Your Device ID" over Wi-Fi network</center>
+<center><span style="color:red; font-size:2em;" font-size = 30px>⚠️</span> It might take several attempts--plugging the power supply in and out--for the Access Point to show up</center>
+</p><center><img src="img/connect1.gif" max-width= auto max-height= auto></center>
 </div>
 </div>
 </div></section><section>
@@ -12451,30 +12426,12 @@ Change permission privileges with:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="-Check-that-you're-getting-the-data-"><center> Check that you're getting the data </center><a class="anchor-link" href="#-Check-that-you're-getting-the-data-">&#182;</a></h3><p>Check if your sensor is emitting in real time its temperature/humidity and Fine Particles data: <a href="https://www.madavi.de/sensor/graph.php">https://www.madavi.de/sensor/graph.php</a>
-<br><br></p>
-<center><img src="img/Alert.png" alt="Drawing" style="width: 70px;"/> If the link to your sensor is <span style="background-color: #FF0000">highlighted in red: </span></center><p>Your device isn't registered on Luftdaten's database, and your data won't be visualized on the <a href="http://deutschland.maps.luftdaten.info/#6/51.165/10.455">map</a>. The purpose of the Madavi's links is to troubleshoot your sensor's connectivity.</p>
-<p>Hold off from registering your sensor until you've verified all your components are working, and that you have installed the sensor <b>outside</b> to take measurements.</p>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><br>
-<br></p>
-<center><b>Clip below</b></center>
-<center><img src="img/arrow.png" alt="Drawing" width= 80px /></center>
-</div>
-</div>
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<center><img src="img/GIF2.gif" max-width= auto max-height= auto></center>
+<h3 id="2.-Configure-the-sensor's-Wi-Fi-connectivity"><center>2. Configure the sensor's Wi-Fi connectivity</center><a class="anchor-link" href="#2.-Configure-the-sensor's-Wi-Fi-connectivity">&#182;</a></h3><p><p></p>
+<center>Go to the following IP address: <a href='http://192.168.4.1/' target=_blank>http://192.168.4.1/</a></center>
+<center><em>(If you're prompted by a menu, select 'Configure')</em></center>
+<center>Enter the Wi-Fi network credentials (name and password) that the Arduino will be connecting to collect and send data</center>
+</p>
+<center><img src="img/connect2.gif" max-width= auto max-height= auto></center>
 </div>
 </div>
 </div></section><section>
@@ -12482,9 +12439,58 @@ Change permission privileges with:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="-Verify-your-sensor's-Wi-Fi-connectivity-"><center> Verify your sensor's Wi-Fi connectivity </center><a class="anchor-link" href="#-Verify-your-sensor's-Wi-Fi-connectivity-">&#182;</a></h3><p>Your device's connectivity is primordial in collecting data; the arduino does not nearly have enough memory to store the data, so if the Wi-Fi is disconnected then the data gets lost. <a href="https://www.madavi.de/sensor/signal.php">Search</a> for your device by its unique ID again.
-<br></p>
-<center><img src="img/GIF3.gif" max-width= auto max-height= auto></center>
+<h3 id="3.-Verify-that-all-of-your-components-are-recognized"><center>3. Verify that all of your components are recognized</center><a class="anchor-link" href="#3.-Verify-that-all-of-your-components-are-recognized">&#182;</a></h3><p><br></p>
+<p><center></p>
+<div style="max-height:500px;max-width:400px;overflow:auto;">
+<img src="img/configPageLabel.jpg" alt="Sample picture for scroll box">
+</div>
+</center>
+<div class="zoom"></div>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.-Check-that-you're-getting-the-data-"><center>4. Check that you're getting the data </center><a class="anchor-link" href="#4.-Check-that-you're-getting-the-data-">&#182;</a></h3><center>Check if your sensor is emitting temperature/humidity and Fine Particles data in real time on Madavi:</center><center><a href="https://www.madavi.de/sensor/graph.php" target=_blank>https://www.madavi.de/sensor/graph.php</a>
+    <br>(search the link by your sensor's unique ID)</center><table>
+<thead><tr>
+<th style="text-align:center"><center>Thermometer</center></th>
+<th style="text-align:center"><center>Dust Sensor</center></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="img/sdsM.png" style="width: 400px;"/></td>
+<td style="text-align:center"><img src="img/dhtM.png" style="width: 400px;"/></td>
+</tr>
+</tbody>
+</table>
+<p><br><center>You should see some lines drawn on the charts as indicative of the sensors working</center></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center><span style="color:red; font-size:2em;" font-size = 30px>⚠️</span> Why is the link to my sensor <span style="background-color: #FF0000"><b>highlighted in red</b></span>? <br>Your device isn't registered on Luftdaten's database <em>yet</em>. The purpose of the Madavi's links is to troubleshoot your sensor's connectivity and settings.</center><br>
+
+<center><span style="color:red; font-size:2em;" font-size = 30px>⚠️</span>
+<b>Do not register</b> your sensor until you've verified all your components are working, and that you have installed the sensor <b>outside</b> to take measurements.</center>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.-Verify-your-sensor's-Wi-Fi-connectivity-"><center>5. Verify your sensor's Wi-Fi connectivity </center><a class="anchor-link" href="#5.-Verify-your-sensor's-Wi-Fi-connectivity-">&#182;</a></h3><center>Your device's connectivity is primordial in collecting data; the arduino does not nearly have enough memory to store the data, so if the Wi-Fi is disconnected then the data gets lost. 
+    <br>Search for your device (by its unique ID) again: <a href="https://www.madavi.de/sensor/signal.php" target=_blank>https://www.madavi.de/sensor/signal.php</a></center>
+<br>
+<center><img src="img/wifiM.png" alt="Drawing" max-width= auto/></center>
 </div>
 </div>
 </div></section></section><section><section>
@@ -12500,7 +12506,8 @@ Change permission privileges with:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Connect-the-silicone-tube-to-the-dust-sensor"><center>Connect the silicone tube to the dust sensor</center><a class="anchor-link" href="#Connect-the-silicone-tube-to-the-dust-sensor">&#182;</a></h3><center><img src="img/assemble3.jpg" style="width: 400px;"/></center>
+<h3 id="Connect-the-silicone-tube-to-the-dust-sensor"><center>Connect the silicone tube to the dust sensor</center><a class="anchor-link" href="#Connect-the-silicone-tube-to-the-dust-sensor">&#182;</a></h3><p><br></p>
+<center><img src="img/assemble3.jpg" style="width: 400px;"/></center>
 </div>
 </div>
 </div></section><section>
@@ -12629,11 +12636,11 @@ Change permission privileges with:
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">IFrame</span>
-<span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s1">&#39;https://luftdaten.info/en/construction-manual/&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s1">&#39;https://meine.luftdaten.info/register&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12646,16 +12653,16 @@ Change permission privileges with:
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[19]:</div>
+<div class="prompt output_prompt">Out[2]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
         <iframe
-            width="1000"
+            width="800"
             height="400"
-            src="https://luftdaten.info/en/construction-manual/"
+            src="https://meine.luftdaten.info/register"
             frameborder="0"
             allowfullscreen
         ></iframe>
